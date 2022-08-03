@@ -38,7 +38,7 @@ h1 {
     margin: 28px 0px 40px 0px;
 }
 
-ul {
+.accordion {
     list-style-type: none;
     margin: 0 24px 0 24px;
     padding-inline-start: 0px;
@@ -46,7 +46,7 @@ ul {
     align-self: flex-start;
 }
 
-li {
+.accordion-button {
     font-family: 'Kumbh Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
