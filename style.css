@@ -46,7 +46,13 @@ h1 {
     align-self: flex-start;
 }
 
+.accordion-button-container {
+    display: flex;
+}
+
 .accordion-button {
+    width: 93%;
+    max-width: 295px;
     font-family: 'Kumbh Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -54,6 +60,18 @@ h1 {
     line-height: 16px;
     text-align:left;
     color: hsla(237, 12%, 33%, 1);
+}
+
+.arrow {
+    color: hsla(14, 88%, 65%, 1);
+    font-weight: 900;
+}
+
+.accordion-text {
+    max-width: 320px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 p {
@@ -67,10 +85,16 @@ p {
  }
 
  .line {
+
     height: 1px;
     background-color: hsla(240, 5%, 91%, 1);
     margin: 18px 0px 18px 0px;
  }
+
+
+
+
+
 
  .hidden {
     display:none;
