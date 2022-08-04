@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
@@ -63,13 +64,13 @@
     const accordions = document.getElementsByClassName("accordion-button-container");
     for (let i=0; i<accordions.length; i++){
       accordions[i].addEventListener("click",()=>{
-        const accordionText = event.target.parentElement.nextSibling;
-        console.log(accordionText);
+        const accordion = event.target.parentElement;
+        const accordionText = accordion.nextElementSibling;
         if (accordionText.style.maxHeight) {
           accordionText.style.maxHeight = null;
         } else {
           accordionText.style.maxHeight = accordionText.scrollHeight + "px";
-        } 
+        }
       });
     }
   </script>

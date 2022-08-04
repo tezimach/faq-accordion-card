@@ -48,6 +48,7 @@ h1 {
 
 .accordion-button-container {
     display: flex;
+    margin: 18px 0 18px 0;
 }
 
 .accordion-button {
@@ -68,6 +69,7 @@ h1 {
 }
 
 .accordion-text {
+    width: 95%;
     max-width: 320px;
     max-height: 0;
     overflow: hidden;
@@ -88,14 +90,4 @@ p {
 
     height: 1px;
     background-color: hsla(240, 5%, 91%, 1);
-    margin: 18px 0px 18px 0px;
- }
-
-
-
-
-
-
- .hidden {
-    display:none;
  }
