@@ -65,14 +65,15 @@
       accordions[i].addEventListener("click",()=>{
         const accordion = event.target.parentElement;
         const accordionText = accordion.nextElementSibling;
+        const arrow = event.target.nextElementSibling;
         if (accordionText.style.maxHeight) {
           accordionText.style.maxHeight = null;
           event.target.classList.remove("accordion-button-after");
-          event.target.nextElementSibling.classList.remove("arrow-after");
+          arrow.classList.remove("arrow-after");
         } else {
           accordionText.style.maxHeight = accordionText.scrollHeight + "px";
           event.target.classList.add("accordion-button-after");
-          event.target.nextElementSibling.classList.add("arrow-after");
+          arrow.classList.add("arrow-after");
         }
       });
     }
