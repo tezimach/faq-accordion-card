@@ -72,6 +72,11 @@ h1 {
 .arrow {
     color: hsla(14, 88%, 65%, 1);
     font-weight: 900;
+    transform: rotate(90deg);
+}
+
+.arrow-after {
+    transform: rotate(270deg);
 }
 
 .accordion-text {
