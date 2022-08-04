@@ -60,7 +60,6 @@
     </div>
   </div>
   <script>
-    
     const accordions = document.getElementsByClassName("accordion-button-container");
     for (let i=0; i<accordions.length; i++){
       accordions[i].addEventListener("click",()=>{
@@ -68,8 +67,10 @@
         const accordionText = accordion.nextElementSibling;
         if (accordionText.style.maxHeight) {
           accordionText.style.maxHeight = null;
+          event.target.classList.remove("accordion-button-after");
         } else {
           accordionText.style.maxHeight = accordionText.scrollHeight + "px";
+          event.target.classList.add("accordion-button-after");
         }
       });
     }
